@@ -1,0 +1,30 @@
+@page
+@model WebApplication1.Models.RegisterModel
+
+@{
+    Layout = "_Layout";
+}
+
+<form method="post" asp-controller="Controller1" asp-action="Notify">
+    <div>
+        <label>BankCode:</label>
+        <input type="number" name="bankCode"/>
+    </div>
+    <div>
+        <label>BankTransactionNumber:</label>
+        <input type="number" name="bankTransactionNumber"/>
+    </div>
+    <div>
+        <label>BankBranchCode:</label>
+        <input type="number" name="bankBranchCode"/>
+    </div>
+    <div>
+        <label>Prn:</label>
+        <input type="number" name="prn"/>
+    </div>
+                
+    <div>
+        <button>Submit</button>
+    </div>
+</form>
+

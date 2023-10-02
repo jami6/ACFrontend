@@ -1,0 +1,17 @@
+@page
+@model WebApplication1.Models.RegisterModel
+
+@{
+    Layout = "_Layout";
+}
+
+<form method="post" asp-controller="Controller1" asp-action="Register">
+    <div>
+        <input type="text" name="username" placeholder="username"/>
+    </div>
+    
+    <div>
+        <button>Submit</button>
+    </div>
+</form>
+
